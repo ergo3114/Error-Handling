@@ -16,6 +16,7 @@ try {
         throw "This doesn't seem right"
     }
 } catch{
+    Clear-Host
     $Error[0]
     # $Error[0].CategoryInfo # Info about reason and category
     # $Error[0].Exception # Extracted issue
