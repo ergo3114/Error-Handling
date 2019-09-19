@@ -24,6 +24,19 @@ try {
     }
 } catch{
     Clear-Host
-    Write-Output "Oh no, something happened"
-    # Perform error actions here
+    $Error[0]
+
+    # $Error[0].CategoryInfo # Info about reason and category
+    
+    # $Error[0].Exception # Extracted issue
+    
+    # $Error[0].InvocationInfo # Finding the culprit
+    
+    # $Error[0].InvocationInfo.ScriptName # Finding the culprit; curated
+    
+    # $Error[0].ScriptStackTrace # Finding the needle in the hay stack
+    
+    # $error[0].ErrorDetails.RecommendedAction # Useful info for support
+    
+    # $Error[0].Exception.GetType().FullName # Helps us find that specific error
 }
