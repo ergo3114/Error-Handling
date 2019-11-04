@@ -1,6 +1,6 @@
 try
 {
-    Get-Process fdsfds -ErrorVariable $mybestvariablename
+    Get-Process fdsfds -ErrorVariable mybestvariablename
 }
 catch
 {

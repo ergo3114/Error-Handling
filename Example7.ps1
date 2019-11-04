@@ -1,5 +1,5 @@
 try {
-    Get-ChildItem c:\thisfiledoesnotexist -ErrorAction Stop -ErrorVariable mycustomerror
+    Get-ChildItem c:\thisfiledoesnotexist -ErrorVariable mycustomerror
 }
 catch [System.Management.Automation.ItemNotFoundException]
 {

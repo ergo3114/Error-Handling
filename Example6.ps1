@@ -26,7 +26,7 @@ try {
     Clear-Host
     $Error[0]
 
-    # $Error[0].CategoryInfo # Info about reason and category
+    # $Error[0].CategoryInfo.Reason # Info about reason and category
     
     # $Error[0].Exception # Extracted issue
     
